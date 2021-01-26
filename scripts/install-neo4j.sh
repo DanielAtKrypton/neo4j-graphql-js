@@ -17,6 +17,10 @@ if [ ! -d "neo4j/data/databases/graph.db" ]; then
     sudo apt-get install unzip
     unzip recommendations.db.zip
     mv recommendations.db neo4j/data/databases/graph.db
+    # clean up
+    rm neo4j-$NEO4J_DIST-$NEO4J_VERSION-unix.tar.gz*
+    rm recommendations.db.zip*
+    rm __MACOSX* -r
 else
     echo "Database is already installed, skipping"
 fi
