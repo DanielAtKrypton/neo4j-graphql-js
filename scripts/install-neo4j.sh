@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [ ! -f ../.env ]
+then
+  export $(cat .env | xargs)
+fi
+
 set -xe
 
 if [ ! -d "neo4j/data/databases/graph.db" ]; then

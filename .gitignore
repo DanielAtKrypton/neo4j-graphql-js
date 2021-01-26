@@ -70,3 +70,9 @@ test/tck/*
 !test/tck/.gitkeep
 
 .history
+
+__MACOSX
+neo4j
+
+neo4j-enterprise*
+recommendations.db.zip*
