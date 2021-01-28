@@ -71,8 +71,5 @@ test/tck/*
 
 .history
 
-__MACOSX
+.download_cache
 neo4j
-
-neo4j-enterprise*
-recommendations.db.zip*
